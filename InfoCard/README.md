@@ -53,11 +53,8 @@ connect(card, &InfoCard::buttonClicked, this, &MyClass::onButtonClicked);
 
 Example screenshot:
 
-![InfoCard example](../assets/First_example_for_fileinfo.png)
-
-Second example:
-
-![Second example](../assets/Second_example_for_fileinfo.png)
+![First example](assets/First_example_for_fileinfo.png)
+![First example](assets/Second_example_for_fileinfo.png)
 
 <hr style="border-top:4px solid #444; margin: 2rem 0;">
 
@@ -200,55 +197,37 @@ connect(card, &InfoCard::buttonClicked, this, &MyClass::onButtonClicked);
 </ul>
 </div>
 
-## سیگنال‌ها
 
-<div style="direction: rtl; text-align: right;">
-<ul style="direction: rtl; text-align: right; list-style-position: inside; padding-right: 1em;">
-	<li>`buttonClicked()` — منتشر می‌شود وقتی کاربر دکمه کارت را فشار می‌دهد.</li>
-</ul>
-</div>
- 
+
+## سیگنال‌ها (Signals)
+
+* `buttonClicked()` — منتشر می‌شود وقتی کاربر دکمه کارت را فشار می‌دهد.
+
 ## استایل و سفارشی‌سازی
 
-<div style="direction: rtl; text-align: right;">
 مقادیر استایل در متغیرهای عضو خصوصی ذخیره می‌شوند (مثلاً `m_cardBgColor`, `m_titleFont`, `m_buttonBgColor`, ...). متد خصوصی `updateStyles()` بر اساس این مقادیر رشته‌های استایل تولید و روی ویجت اعمال می‌کند.
 
 نکته: برای تغییر‌های پویا (مثلاً در زمان اجرا)، پس از set کردن رنگ/فونت با یکی از setterها، کامپوننت به‌صورت خودکار استایل را به‌روزرسانی می‌کند.
-</div>
 
 ## فایل‌های موجود در پوشه
 
-<div style="direction: rtl; text-align: right;">
-<ul style="direction: rtl; text-align: right; list-style-position: inside; padding-right: 1em;">
-	<li>`InfoCard.h` — تعریف کلاس و دکلیریشن متدهای زنجیره‌ای</li>
-	<li>`InfoCard.cpp` — پیاده‌سازی و `updateStyles()`</li>
-	<li>`ExampleUsage.cpp` — نمونه و نحوه استفاده از Fluent API</li>
-	<li>`README.md` — این فایل</li>
-</ul>
-</div>
+* `InfoCard.h` — تعریف کلاس و دکلیریشن متدهای زنجیره‌ای
+* `InfoCard.cpp` — پیاده‌سازی و `updateStyles()`
+* `ExampleUsage.cpp` — نمونه و نحوه استفاده از Fluent API
+* `README.md` — این فایل
 
 ## موارد استفاده پیشنهادی
 
-<div style="direction: rtl; text-align: right;">
-<ul style="direction: rtl; text-align: right; list-style-position: inside; padding-right: 1em;">
-	<li>نمایش فایل‌های آپلود/دانلود در یک لیست چت</li>
-	<li>کارت‌های اطلاعات کاربر در پروفایل</li>
-	<li>آیتم‌های لیست فایل‌ها در فایل‌منیجر کوچک</li>
-	<li>نمایش آیتم‌های دانلود و وضعیت آن‌ها</li>
-</ul>
-</div>
+* نمایش فایل‌های آپلود/دانلود در یک لیست چت
+* کارت‌های اطلاعات کاربر در پروفایل
+* آیتم‌های لیست فایل‌ها در فایل‌منیجر کوچک
+* نمایش آیتم‌های دانلود و وضعیت آن‌ها
 
 ## نکات پیاده‌سازی (مختصر)
 
-<div style="direction: rtl; text-align: right;">
-<ul style="direction: rtl; text-align: right; list-style-position: inside; padding-right: 1em;">
-	<li>از `QVBoxLayout` و `QHBoxLayout` برای چیدمان استفاده شده و ساختار کلی از `QFrame` مشتق شده است.</li>
-	<li>برای آیکون‌ها و دکمه‌ها از ویجت‌های استاندارد Qt استفاده شده است تا سازگاری بالایی وجود داشته باشد.</li>
-</ul>
-</div>
-
+* از `QVBoxLayout` و `QHBoxLayout` برای چیدمان استفاده شده و ساختار کلی از `QFrame` مشتق شده است.
+* برای آیکون‌ها و دکمه‌ها از ویجت‌های استاندارد Qt استفاده شده است تا سازگاری بالایی وجود داشته باشد.
 ## مثال 
 
-![مثال دوم](../assets/First_example_for_fileinfo.png)
-
-![نمونه InfoCard](../assets/Second_example_for_fileinfo.png)
+![First example](assets/First_example_for_fileinfo.png)
+![First example](assets/Second_example_for_fileinfo.png)
